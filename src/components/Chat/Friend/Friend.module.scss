@@ -1,0 +1,67 @@
+$gray: rgb(47, 49, 54);
+$dark: rgb(32, 34, 37);
+$lightGray: rgb(55, 57, 62);
+$textgray: rgb(188, 188, 189);
+$textwhite: rgb(255, 255, 255);
+$extralightgray: rgb(67, 70, 77);
+.friendContainer {
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 4px;
+
+  .friendBtn {
+    display: flex;
+    color: $textgray;
+    background-color: transparent;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    .imgContainer {
+      position: relative;
+      margin: 0px 15px 0px 5px;
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .deleteFriendBtn {
+    margin-left: auto;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    right: 25px;
+    top: 17px;
+    color: $textgray;
+    display: none;
+  }
+  .deleteFriendBtn:hover {
+    color: $textwhite;
+  }
+  .showDeleteBtn {
+    display: block;
+  }
+}
+.friendContainer:hover {
+  background-color: $extralightgray;
+  .friendBtn {
+    color: $textwhite;
+  }
+}
+.active {
+  background-color: $extralightgray;
+  .friendBtn {
+    color: $textwhite;
+  }
+}

@@ -1,0 +1,26 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  padding-bottom: 32px;
+
+  .iconContainer {
+    margin-bottom: 8px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(0, 168, 252);
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .content:hover {
+    text-decoration-line: underline;
+  }
+}

@@ -1,0 +1,12 @@
+.flexRowContainer {
+  display: flex;
+  .flexColumnContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .friendContainer {
+      display: flex;
+      position: relative;
+    }
+  }
+}

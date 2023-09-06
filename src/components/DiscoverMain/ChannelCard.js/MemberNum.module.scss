@@ -1,0 +1,23 @@
+.memberNumContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  .dotOffline {
+    background-color: rgb(196, 201, 206);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+  }
+
+  .dotOffline.isGreen {
+    background-color: green;
+  }
+
+  .members {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(181, 186, 193);
+  }
+}

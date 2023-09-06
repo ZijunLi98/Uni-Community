@@ -1,0 +1,60 @@
+$backgroundColor: rgb(56, 57, 62);
+$gray: rgb(47, 49, 54);
+$dark: rgb(32, 34, 37);
+$lightGray: rgb(55, 57, 62);
+$textgray: rgb(188, 188, 189);
+$textwhite: rgb(255, 255, 255);
+
+.chatRoomContainer {
+  height: calc(100vh - 50px);
+  background-color: $backgroundColor;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .chatInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 32px;
+  }
+
+  .chatHeader {
+    padding: 20px;
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+    h2 {
+      margin: 0;
+      color: $textwhite;
+    }
+    .buttonContainer {
+      margin-top: 10px;
+      button {
+        background-color: rgb(85, 85, 85);
+        color: $textwhite;
+        border: 0;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .chatArea {
+    padding: 0px 20px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+.chatArea::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

@@ -1,0 +1,46 @@
+$gray: rgb(47, 49, 54);
+$dark: rgb(32, 34, 37);
+$lightGray: rgb(55, 57, 62);
+$textgray: rgb(188, 188, 189);
+$textwhite: rgb(255, 255, 255);
+
+.chatContainer {
+  display: flex;
+  color: $textwhite;
+  margin-bottom: 20px;
+
+  .messageImg {
+    width: 50px;
+    height: 50px;
+    margin: 20px 10px 0 10px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .messageContainer {
+    h4 {
+      margin-bottom: 5px;
+    }
+    span {
+      color: $textgray;
+      font-size: 10px;
+    }
+
+    .messageBox {
+      display: inline-block;
+      max-width: 600px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $dark;
+
+      .messageInnerBox {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 15px;
+      }
+    }
+  }
+}
